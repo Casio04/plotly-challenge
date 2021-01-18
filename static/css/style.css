@@ -1,0 +1,33 @@
+#sample_selector {
+    display: block;
+    margin: 0 auto;
+}
+
+.wrap{
+    text-align: center;
+    color: rgb(4, 11, 71);
+}
+
+.sample{
+    box-sizing: border-box;
+    border: 3px solid rgb(62, 63, 63);
+    padding-bottom: 50px;
+}
+
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+    -webkit-overflow-scrolling: touch;
+}
+
+.panel-title {
+    max-width:calc(100% - 120px);
+  }
+
+.jumbotron{
+    background-image: url("../images/bacteria.jpg");    
+}
