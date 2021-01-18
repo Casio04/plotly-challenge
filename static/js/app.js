@@ -1,7 +1,7 @@
 // init function to get the list of "names" to populate the selection list
 function init(){
     // Read Json
-    d3.json("../../data/samples.json").then(function(namesList){
+    d3.json("../data/samples.json").then(function(namesList){
     // Select the id corresponding to the select tag
     let selection = d3.select("#selDataset")
     // select all option tags
@@ -35,7 +35,7 @@ function barChart(id_value){
 // Emptying the bar id to clear all the information before
     d3.select("#bar").html("")
     // Reading data and obtaining the index for the value
-    d3.json("../../data/samples.json").then(function(data){
+    d3.json("../data/samples.json").then(function(data){
         let index = data.names.findIndex(function(i){
             return id_value === i
         })
@@ -78,7 +78,7 @@ function demographicData(id_value){
     tr.append("th").text("Data")
     let tbody = table.append("tbody").attr("id", "table-body")
     // read Json and use a function to retrieve the index number of the ID selected
-    d3.json("../../data/samples.json").then(function(data){
+    d3.json("../data/samples.json").then(function(data){
         let index = data.names.findIndex(function(i){
             return id_value === i
         })
@@ -98,7 +98,7 @@ function demographicData(id_value){
 function bubbleChart(id_value){
     // Clear data from bubble id
     d3.select("#bubble").html("")
-    d3.json("../../data/samples.json").then(function(data){
+    d3.json("../data/samples.json").then(function(data){
         let index = data.names.findIndex(function(i){
             return id_value === i
         })
